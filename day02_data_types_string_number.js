@@ -1,3 +1,4 @@
+// REVIEW
 //2 main data type in javascript
 /*1. Primitive Data👍
     - string : "..." '...' `...`
