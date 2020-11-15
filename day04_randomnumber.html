@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Number</title>
+</head>
+<body>
+    <script>
+    while (true) {  
+        //case 2
+        // tembak angka, rentang 1 - 10 (10 nya termasuk)
+        // generate random number
+        let number = Math.floor(Math.random() * 10) + 1
+        
+        //ask user input
+        let userNumber = parseInt(prompt(`
+        tebak angka : masukan dari 1 - 10`))
+        
+        //check angka
+        if (number === userNumber) {
+            alert('HORE ANDA BENAR🎈')
+        } else if (isNaN(userNumber) || userNumber <= 0) {
+            alert('NOMOR YANG ANDA MASUKAN SALAH')
+        } else if (userNumber > 10) {
+            alert("HELLO ANGKA TERLALU BESAR")
+        } else{
+            alert(`ANDA SEDANG APES 🎃 Jawaban ${number}`)
+        }
+
+        //maunya game nya jalan terus, jd 
+        //ask user : play again? (DIBUNGKUS LOOP)
+        let userConfirm = confirm('MAU MAIN LAGI ?') //true or false 
+        if (userConfirm === false) {
+            break //berhenti looping
+        }
+    }
+        </script>
+</body>
+</html>
