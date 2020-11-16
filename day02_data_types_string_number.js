@@ -35,6 +35,7 @@
     console.log(kenalan)
     console.log(kenalan.length)
 
+    // NOTE
     //methods
     console.log(kenalan.toLowerCase())
     console.log(kenalan.toLocaleUpperCase())
@@ -43,7 +44,7 @@
     let sekolah = "Purwadhika"
     console.log(sekolah)
     console.log(sekolah.indexOf("P")) //0 karena java mulai dari 0
-    console.log(sekolah.indexOf("p")) //-2 karena gada p kecil
+    console.log(sekolah.indexOf("p")) //-1 karena gada p kecil
     console.log(sekolah.indexOf("a")) //a di nomor berapa
     console.log(sekolah.slice(4)) //motong 4 karakter dari depan
     console.log(sekolah.slice(0,3)) //motong 3 karakter dari string ke 0
@@ -56,6 +57,7 @@
                                         //kalau substring tidak merubah variablenya juga
     console.log(sekolah)
 
+    // REVIEW
     //reference
 
     //NUMBER adalah angka

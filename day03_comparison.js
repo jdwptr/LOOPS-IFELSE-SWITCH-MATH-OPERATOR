@@ -1,3 +1,4 @@
+// NOTE
 //1. COMPARISON OPERATOR (unutk ke CONDITIONAL STATEMENT-> if...else..)
 // Comparison operator => hasilnya juga boolean true or false
 //mathematic comparison : >, <, <=, >=, ==, ===, !=
