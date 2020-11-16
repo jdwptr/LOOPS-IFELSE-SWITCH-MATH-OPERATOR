@@ -14,11 +14,13 @@
     */
 
 //DATA TYPES LANJUTAN:
-//=> BOOLEAN : data type yg hanya punya 2 valule (true or false)
+// NOTE
+//=> BOOLEAN : data type yg hanya punya 2 value (true or false)
 let boolean = true
 boolean = false
 
-//Not Type Value (Null & Undifiend)
+// NOTE
+//Not Type Value (Null & Undefined)
 //=> NULL : non value type, tapi punya value, value nya null (biasanya sblmnya sudah ada) 
 //(isinya selain string, number boolean), trmsk salah satu object JS tapi punya value
 
@@ -44,6 +46,7 @@ console.log(typeof "hello") //karena udah ketauan string
 console.log(typeof(number + angka)) //yg didlm kurung dieksekusi dulu baru didefinisikan datanya
 //krn number diatas gada nilai, jd kosong ditambah number, jadinya number (misal kosong + 10 = ya 10)
 
+// NOTE
 //=> DATA TYPE CONVERSION : konversi dari satu data type ke data type lainnnya
 
 //1. KONVERSI TO STRING : tidak merubah original
@@ -52,6 +55,7 @@ console.log(typeof(number + angka)) //yg didlm kurung dieksekusi dulu baru didef
 //- apapun ditambah string = string (mau string didepan atau dibelakang)
 //- template string literal ; `..`
 
+// ANCHOR
 //=> CARA KE 1
 //=> NUMBER TO STRING
 let ganjil = 3 // number
@@ -75,6 +79,7 @@ console.log(typeof(benar + ``))
 console.log(typeof (`${benar}`))
 console.log(angka + kata) //hasilnya pasti = 100purwadhika
 
+// ANCHOR
 //2.KONVERSI KE NUMBER : parseInt() / parseFloat()=>menghasilkan value dan tipe data
 //kalo berhasil, menghasilkan value nya number, kalo bkn number trs dikonversi disini jd not number
 let strGenap = "26" //string
@@ -111,6 +116,7 @@ let angkaAgakBenar = '100ABC'
 console.log(parseInt(angkaSemiBenar)) //angka yg bisa diconvert didepan diambil
 console.log(parseInt(angkaAgakBenar))
 
+// ANCHOR
 //3. KONVERSI KE BOOLEAN : Boolean()
 //tipe data jd boolean, value : true atau false
 let sekolah = 'purwadhika'
@@ -123,16 +129,17 @@ console.log(Boolean(strKosong))
 console.log(Boolean(numberBenar))
 console.log(Boolean(tidakPunyaNilai))
 
+// NOTE
 //YG JADI TRUE SAAT DIKONVERSI KE BOOLEAN
 //String => 'purwadhika', 'andi', '568hja' , ' ' => bukan string kosong
 //Angka/Number
 // [] array kosong
 // {} object kosong
 
+// NOTE
 //YG JD FALSE SAAT DIKONVERSI KE BOOLEAN
 //string kosong => `` , '' , ""
 //NULL
 //UNDEFINED
 //NaN
 console.log(Boolean(NaN))
-
